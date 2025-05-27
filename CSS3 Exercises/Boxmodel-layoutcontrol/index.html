@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 8 - Box Model & Layout Control</title>
+    <style>
+        .eventCard {
+            border: 2px solid #2c3e50;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            background-color: #ecf0f1;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        input.highlighted {
+            outline: 3px solid #e74c3c;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+       
+        .hidden {
+            visibility: hidden;
+           
+        }
+
+        .none {
+            display: none;
+           
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="eventCard">
+        <h3>Community Gathering</h3>
+        <p>Join neighbors for a day of fun and friendship.</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Your Name" class="highlighted" />
+        <input type="email" placeholder="Your Email" class="highlighted" />
+    </form>
+
+   
+    <div class="hidden">This text is invisible but occupies space.</div>
+    <div class="none">This text is not visible and takes no space.</div>
+
+</body>
+
+</html>

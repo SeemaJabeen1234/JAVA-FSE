@@ -1,0 +1,21 @@
+Download Bootstrap
+Download the latest Bootstrap from the official site → Choose "Compiled CSS and JS".
+
+Extract the ZIP file
+Unzip the downloaded file. You’ll see a folder named bootstrap-5.x.x-dist (the version number may vary).
+
+Open the folder, and identify:
+
+css/ folder → contains Bootstrap styles
+
+js/ folder → contains JavaScript plugins
+
+icons/ folder (optional, download Bootstrap Icons separately)
+
+Write this in your notes or assignment:
+
+css/: Contains precompiled Bootstrap CSS files. Use bootstrap.min.css for faster loading.
+
+js/: Contains Bootstrap’s JS files. Use bootstrap.bundle.min.js to include all plugins and Popper.js.
+
+icons/: (If available) Contains Bootstrap Icons, used to add vector-based icons to your web pages.

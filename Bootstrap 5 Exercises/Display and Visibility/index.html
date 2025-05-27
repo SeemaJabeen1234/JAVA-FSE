@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Display & Visibility - Exercise 14</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container my-5">
+       
+        <h2 class="mb-4">Exercise 14.1: Display Utilities (d-none, d-md-block, d-lg-flex)</h2>
+        <div class="border p-3 mb-3 bg-light">
+            <p class="d-none d-md-block">
+                This paragraph is hidden on small screens (xs, sm) and visible as block on medium (md) and larger
+                screens.
+            </p>
+            <div class="d-none d-lg-flex bg-primary text-white p-3 rounded">
+                This box is only visible as a flex container on large (lg) and above screens.
+            </div>
+        </div>
+
+       
+        <h2 class="mb-4 mt-5">Exercise 14.2: Responsive Sidebar (visible on md and above)</h2>
+        <div class="d-none d-md-block bg-secondary text-white p-4 mb-3 rounded" style="max-width: 300px;">
+            Responsive Sidebar<br />
+            (Visible on md, lg, xl, xxl screens)
+        </div>
+        <div class="bg-light p-4 rounded">
+            <p>Main content always visible regardless of screen size.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

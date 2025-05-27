@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin: 0;
+    background-color: #004d40;
+}
+
+.main-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav a:visited {
+    color: #b2dfdb;
+}
+
+.main-nav a:hover {
+    color: #ffd600;
+    text-decoration: underline;
+}
+
+.main-nav a:active {
+    color: #ffab00;
+}
+
+.city-features {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.feature-list {
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.feature-list li {
+    padding: 10px 0;
+    margin-left: 10px;
+}

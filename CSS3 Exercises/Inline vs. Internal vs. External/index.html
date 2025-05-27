@@ -1,0 +1,42 @@
+<!-- Why CSS?
+CSS (Cascading Style Sheets) is used to separate content (HTML) from presentation (design). It allows:
+Consistency across pages.
+Reusability of styles.
+Separation of concerns between structure and styling.
+Easier maintenance and scalability of code.
+
+Scenario Setup: Applying Styles in Different Ways
+Inline CSS – for quick, one-off styles.
+Internal CSS – for small projects or single-page styles.
+External CSS – for reusable, scalable styling across multiple pages. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Inclusion Methods</title>
+
+    <!-- Internal CSS (Embedded) -->
+    <style>
+        /* Body styles */
+        body {
+            background-color: #f0f8ff;
+        }
+    </style>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Inline Style -->
+    <h1 style="color: red;">This is an Inline Styled Heading</h1>
+
+    <h2>This is a Reusable Styled Heading</h2>
+    <p>This paragraph will be styled externally.</p>
+
+</body>
+
+</html>

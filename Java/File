@@ -1,0 +1,70 @@
+36. HTTP Client API (Java 11+)
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+public class HttpClientExample {
+    public static void main(String[] args) throws Exception {
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI("https://api.github.com/repos/openai/gpt-4"))
+                .GET()
+                .build();
+
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+
+        System.out.println("Status code: " + response.statusCode());
+        System.out.println("Response body:\n" + response.body());
+    }
+}
+
+
+37. Using javap to Inspect Bytecode
+Write Example.java:
+
+public class Example {
+    public void sayHello() {
+        System.out.println("Hello, world!");
+    }
+}
+Compile:
+
+javac Example.java
+Inspect bytecode:
+
+javap -c Example
+This prints JVM instructions for methods.
+
+
+
+38. Decompile a Class File
+Compile any .java.
+
+Use tools like JD-GUI or CFR to open .class.
+
+See the original-looking Java code reconstructed.
+
+
+
+39. Reflection in Java
+import java.lang.reflect.Method;
+
+public class ReflectionExample {
+    public static void hello(String name) {
+        System.out.println("Hello, " + name);
+    }
+
+    public static void main(String[] args) throws Exception {
+        Class<?> clazz = Class.forName("ReflectionExample");
+        Method[] methods = clazz.getDeclaredMethods();
+
+        for (Method m : methods) {
+            System.out.println("Method: " + m.getName());
+        }
+
+        Method helloMethod = clazz.getDeclaredMethod("hello", String.class);
+        helloMethod.invoke(null, "Seema");
+    }
+}

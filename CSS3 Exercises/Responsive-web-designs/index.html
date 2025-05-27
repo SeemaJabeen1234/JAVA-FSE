@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Web Design Example</title>
+    <style>
+        /* Basic reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            font-size: 18px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            background-color: #3498db;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 3vw;
+            /* Responsive font size */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* Media query for smaller than 768px */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                padding: 12px;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 6vw;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            img {
+                width: 90vw;
+                /* smaller image width */
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h1>Welcome to Our Community Portal</h1>
+        <p>
+            Stay updated with the latest news, events, and activities happening around you.
+            Our portal is designed to be accessible from any device, whether desktop, tablet, or phone.
+        </p>
+       
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Register for an Event</h2>
+        <form>
+            <label>
+                Name:
+                <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+                Date of Event:
+                <input type="date" name="date" required />
+            </label>
+            <label>
+                Event Type:
+                <select name="eventType" required>
+                    <option value="">-- Select Event --</option>
+                    <option value="Workshop">Workshop</option>
+                    <option value="Seminar">Seminar</option>
+                    <option value="Community Meet">Community Meet</option>
+                </select>
+            </label>
+            <label>
+                Message:<br />
+                <textarea name="message" rows="4" cols="40" placeholder="Additional comments..."></textarea>
+            </label>
+            <br />
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+
+</html>

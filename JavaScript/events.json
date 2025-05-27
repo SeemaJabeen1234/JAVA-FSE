@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Yoga Class",
+    "date": "2025-06-01",
+    "seats": 10,
+    "category": "Health",
+    "location": "Community Center"
+  },
+  {
+    "name": "Old Event",
+    "date": "2024-12-01",
+    "seats": 5,
+    "category": "History",
+    "location": "Library"
+  },
+  {
+    "name": "Cooking Workshop",
+    "date": "2025-07-15",
+    "seats": 0,
+    "category": "Culinary",
+    "location": "Kitchen Studio"
+  },
+  {
+    "name": "Baking Workshop",
+    "date": "2025-08-01",
+    "seats": 20,
+    "category": "Culinary",
+    "location": "Kitchen Studio"
+  }
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>Event Feedback</h2>
+        <form>
+            <label>
+                Phone Number:
+                <input type="tel" placeholder="123-456-7890" />
+            </label>
+            <label>
+                Select Event:
+                <select>
+                    <option>-- Choose event --</option>
+                    <option>Workshop - $50</option>
+                    <option>Seminar - $30</option>
+                    <option>Community Meet - Free</option>
+                </select>
+            </label>
+            <label>
+                Feedback:<br />
+                <textarea rows="4" cols="40" placeholder="Type your feedback..."></textarea>
+            </label>
+            <br />
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+
+</html>
